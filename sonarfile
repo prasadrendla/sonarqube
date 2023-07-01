@@ -35,7 +35,7 @@ sonar.jdbc.password=cprasad123
 ==> sudo vim /opt/sonarqube/bin/linux-x86-64/sonar.sh
 RUN_AS_USER=sonar "add this line in below or edit this line"
 ==>  sudo vim /etc/systemd/system/sonar.service
-insert below lines in above file upto 51st line
+insert below lines in above file upto 52st line
 [Unit]
 Description=SonarQube service
 After=syslog.target network.target
