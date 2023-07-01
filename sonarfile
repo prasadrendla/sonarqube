@@ -31,7 +31,7 @@ chown sonar:sonar /opt/sonarqube -R
 ==> sudo vim /opt/sonarqube/conf/sonar.properties
 sonar.jdbc.username=sonar
 sonar.jdbc.password=cprasad123
-# in the same file remove up to question mark "sonar.jdbc.url"
+# in the same file remove up to question mark "sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube add this in 46th line"
 ==> sudo vim /opt/sonarqube/bin/linux-x86-64/sonar.sh
 RUN_AS_USER=sonar "add this line in below or edit this line"
 ==>  sudo vim /etc/systemd/system/sonar.service
