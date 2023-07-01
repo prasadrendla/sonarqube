@@ -60,3 +60,5 @@ fs.file-max=65536
 ==> vim /etc/security/limits.conf
 sonar - nofile 65536
 sonar - nproc 4096
+# now go and browse sonarqube instance ip ip:9000
+
