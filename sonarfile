@@ -19,7 +19,7 @@ exit ("from postgre user")
 # now configure sonarcube
 # install sonar cube and settings service
 sudo apt-get install zip -y
-https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.1.69595.zip
+wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.1.69595.zip
 #then unzip sonarqube
 then move to any location
 mv -v sonarqube-9.9.1 /opt/sonarqube
