@@ -21,6 +21,7 @@ exit ("from postgre user")
 sudo apt-get install zip -y
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.1.69595.zip
 #then unzip sonarqube
+unzip sonarqube-9.9.1.69595.zip
 then move to any location
 mv -v sonarqube-9.9.1 /opt/sonarqube
 groupadd sonar
