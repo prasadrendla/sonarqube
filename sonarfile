@@ -1,3 +1,4 @@
+install a machine with 2 cpu's then start sonarqube installation
 #first install java
 apt install openjdk-19-jre-headless
 #then install postgresql repository
@@ -35,7 +36,7 @@ sonar.jdbc.password=cprasad123
 ==> sudo vim /opt/sonarqube/bin/linux-x86-64/sonar.sh
 RUN_AS_USER=sonar "add this line in below or edit this line"
 ==>  sudo vim /etc/systemd/system/sonar.service
-insert below lines in above file upto 52st line
+insert below lines in above file upto 53st line
 [Unit]
 Description=SonarQube service
 After=syslog.target network.target
@@ -54,11 +55,11 @@ systemctl daemon-reload
 systemctl enable sonar
 systemctl start sonar
 systemctl status sonar
-==> vim /etc/sysctl.conf
-vm.max_map-count=262144
+==> vim /etc/sysctl.conf  " add at the last line "
+vm.max_map_count=262144
 fs.file-max=65536
-==> vim /etc/security/limits.conf
-sonar - nofile 65536
-sonar - nproc 4096
+ulimit -n 65536
+ulimit -u 4096
+# then run " sudo rebort "
 # now go and browse sonarqube instance ip ip:9000
 
